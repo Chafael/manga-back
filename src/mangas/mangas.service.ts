@@ -22,7 +22,7 @@ export class MangasService {
             params.append('limit', searchMangaDto.limit.toString());
         }
 
-        const url = `${this.baseUrl}/mangas?${params.toString()}`;
+        const url = `${this.baseUrl}/manga?${params.toString()}`;
 
         try {
             const response = await fetch(url);
